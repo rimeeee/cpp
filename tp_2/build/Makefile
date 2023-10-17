@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2
+CMAKE_SOURCE_DIR = /mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2/build
+CMAKE_BINARY_DIR = /mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2/build/CMakeFiles /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/build/CMakeFiles /mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,33 @@ tp2_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/build
 .PHONY : tp2_test/fast
 
+src/cartesien.o: src/cartesien.cpp.o
+.PHONY : src/cartesien.o
+
+# target to build an object file
+src/cartesien.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/cartesien.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/cartesien.cpp.o
+.PHONY : src/cartesien.cpp.o
+
+src/cartesien.i: src/cartesien.cpp.i
+.PHONY : src/cartesien.i
+
+# target to preprocess a source file
+src/cartesien.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/cartesien.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/cartesien.cpp.i
+.PHONY : src/cartesien.cpp.i
+
+src/cartesien.s: src/cartesien.cpp.s
+.PHONY : src/cartesien.s
+
+# target to generate assembly for a file
+src/cartesien.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/cartesien.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/cartesien.cpp.s
+.PHONY : src/cartesien.cpp.s
+
 src/main_nuage.o: src/main_nuage.cpp.o
 .PHONY : src/main_nuage.o
 
@@ -165,6 +192,60 @@ src/main_nuage.s: src/main_nuage.cpp.s
 src/main_nuage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/main_nuage.cpp.s
 .PHONY : src/main_nuage.cpp.s
+
+src/point.o: src/point.cpp.o
+.PHONY : src/point.o
+
+# target to build an object file
+src/point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/point.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/point.cpp.o
+.PHONY : src/point.cpp.o
+
+src/point.i: src/point.cpp.i
+.PHONY : src/point.i
+
+# target to preprocess a source file
+src/point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/point.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/point.cpp.i
+.PHONY : src/point.cpp.i
+
+src/point.s: src/point.cpp.s
+.PHONY : src/point.s
+
+# target to generate assembly for a file
+src/point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/point.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/point.cpp.s
+.PHONY : src/point.cpp.s
+
+src/polaire.o: src/polaire.cpp.o
+.PHONY : src/polaire.o
+
+# target to build an object file
+src/polaire.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/polaire.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/polaire.cpp.o
+.PHONY : src/polaire.cpp.o
+
+src/polaire.i: src/polaire.cpp.i
+.PHONY : src/polaire.i
+
+# target to preprocess a source file
+src/polaire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/polaire.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/polaire.cpp.i
+.PHONY : src/polaire.cpp.i
+
+src/polaire.s: src/polaire.cpp.s
+.PHONY : src/polaire.s
+
+# target to generate assembly for a file
+src/polaire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_nuage.dir/build.make CMakeFiles/tp2_nuage.dir/src/polaire.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp2_test.dir/build.make CMakeFiles/tp2_test.dir/src/polaire.cpp.s
+.PHONY : src/polaire.cpp.s
 
 test/catch.o: test/catch.cpp.o
 .PHONY : test/catch.o
@@ -224,9 +305,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tp2_nuage"
 	@echo "... tp2_test"
+	@echo "... src/cartesien.o"
+	@echo "... src/cartesien.i"
+	@echo "... src/cartesien.s"
 	@echo "... src/main_nuage.o"
 	@echo "... src/main_nuage.i"
 	@echo "... src/main_nuage.s"
+	@echo "... src/point.o"
+	@echo "... src/point.i"
+	@echo "... src/point.s"
+	@echo "... src/polaire.o"
+	@echo "... src/polaire.i"
+	@echo "... src/polaire.s"
 	@echo "... test/catch.o"
 	@echo "... test/catch.i"
 	@echo "... test/catch.s"

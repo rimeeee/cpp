@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_2/src/main_nuage.cpp" "CMakeFiles/tp2_nuage.dir/src/main_nuage.cpp.o" "gcc" "CMakeFiles/tp2_nuage.dir/src/main_nuage.cpp.o.d"
+  "/mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/src/cartesien.cpp" "CMakeFiles/tp2_nuage.dir/src/cartesien.cpp.o" "gcc" "CMakeFiles/tp2_nuage.dir/src/cartesien.cpp.o.d"
+  "/mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/src/main_nuage.cpp" "CMakeFiles/tp2_nuage.dir/src/main_nuage.cpp.o" "gcc" "CMakeFiles/tp2_nuage.dir/src/main_nuage.cpp.o.d"
+  "/mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/src/point.cpp" "CMakeFiles/tp2_nuage.dir/src/point.cpp.o" "gcc" "CMakeFiles/tp2_nuage.dir/src/point.cpp.o.d"
+  "/mnt/local.isima.fr/rilamrani/zz3/cpp/tp_2/src/polaire.cpp" "CMakeFiles/tp2_nuage.dir/src/polaire.cpp.o" "gcc" "CMakeFiles/tp2_nuage.dir/src/polaire.cpp.o.d"
   )
 
 # Targets to which this target links.
