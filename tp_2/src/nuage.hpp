@@ -5,7 +5,7 @@
 
 // #include "point.hpp"
 #include "cartesien.hpp" 
- #include "polaire.hpp" 
+#include "polaire.hpp" 
 
 
 // Définition de la classe Nuage générique
@@ -52,17 +52,49 @@ typename Nuage<T>::const_iterator Nuage<T>::end() const {
 }
 
 template <typename T>
-T barycentre_v1(const Nuage<T> &nuage)
+Cartesien barycentre_v1(const Nuage<T> &nuage)
 {
-    T bary;
-    for (typename Nuage<T>::const_iterator it = nuage.begin(); it != nuage.end(); ++it) {
-        // Utilisation de la méthode polymorphique pour convertir en Cartesien
-        Cartesien cartesien = (*it).convertir();  // Utiliser . au lieu de ->
-        bary += cartesien;
+    Cartesien bary;
+    if(nuage.size()==0){
+        bary.setX(0);
+        bary.setY(0);
+    }
+    else {
+        double x;
+        double y;
+        for (typename Nuage<T>::const_iterator it = nuage.begin(); it != nuage.end(); ++it) {
+            Cartesien cartesien;
+            it->convertir(cartesien);  
+            x += cartesien.getX();
+            y += cartesien.getY();
+        }
+        bary.setX(x/nuage.size());
+        bary.setY(y/nuage.size());
     }
     return bary;
 }
 
+Polaire barycentre_v1(const Nuage<Polaire> &nuage)
+{
+    Polaire bary;
+    if(nuage.size()==0){
+        bary.setAngle(0.0);
+        bary.setDistance(0.0);
+    }
+    else {
+        double x = 0.0;
+        double y = 0.0;
+        for (typename Nuage<Polaire>::const_iterator it = nuage.begin(); it != nuage.end(); ++it) {
+            Polaire p;
+            it->convertir(p);  
+            x += p.getAngle();
+            y += p.getDistance();
+        }
+        bary.setAngle(x/nuage.size());
+        bary.setDistance(y/nuage.size());
+    }
+    return bary;
+}
 
 
 // Cartesien barycentre(const Nuage& nuage); 
