@@ -97,6 +97,29 @@ Polaire barycentre_v1(const Nuage<Polaire> &nuage)
 }
 
 
+template <typename T>
+Cartesien barycentre_v2(T nuage)
+{
+    Cartesien bary;
+    if(nuage.size()==0){
+        bary.setX(0);
+        bary.setY(0);
+    }
+    else {
+        double x;
+        double y;
+        for (typename T::const_iterator it = nuage.begin(); it != nuage.end(); ++it) {
+            Cartesien cartesien;
+            it->convertir(cartesien);  
+            x += cartesien.getX();
+            y += cartesien.getY();
+        }
+        bary.setX(x/nuage.size());
+        bary.setY(y/nuage.size());
+    }
+    return bary;
+}
+
 // Cartesien barycentre(const Nuage& nuage); 
 
 
