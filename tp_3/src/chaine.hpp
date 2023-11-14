@@ -17,6 +17,9 @@ class ExceptionChaine : public std::exception {
         }     
 };
 
+template <typename... ARGS>
+std::string chaine(const std::tuple<ARGS...> & t);
+
 template <typename T>
 std::string chaine(const T &x){
     std::string type = demangle(typeid(x).name());
@@ -43,6 +46,17 @@ std::string chaine(const Args &... args){
     std::stringstream ss;
     // ((ss << chaine(args) << " "), ...); 
     return ((chaine(args) +" ")+ ...);
+}
+
+
+template <typename Tuple,size_t... Is>
+std::string chaine_bis(const Tuple & t,std::index_sequence<Is...>){
+    return (chaine(std::get<Is>(t) ...));
+}
+
+template <typename... ARGS>
+std::string chaine(const std::tuple<ARGS...> & t){ 
+    return chaine_bis(t,std::make_index_sequence<sizeof...(ARGS)>()); 
 }
 
 #endif
