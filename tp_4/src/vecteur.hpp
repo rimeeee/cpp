@@ -30,11 +30,12 @@ class Vecteur {
  public:
   //-----------------------------------------------------------------------------Constructeur defaut
   explicit Vecteur(unsigned t = 10) : taille_(t),tableau_(new complexe_t[taille_]) {}
-
+  
   //------------------------------------------------------------------------------Constructeur copie
   Vecteur(const Vecteur & v) : taille_(v.taille_),tableau_(new complexe_t[taille_]) {
    for (unsigned i = 0; i<taille_; ++i) tableau_[i]=v[i];
   }
+
 
   //Vecteur de mouvement
   Vecteur(Vecteur && v) : taille_(v.taille_),tableau_(v.tableau_) {

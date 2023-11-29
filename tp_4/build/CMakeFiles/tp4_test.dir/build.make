@@ -89,9 +89,17 @@ tp4_test_OBJECTS = \
 
 # External object files for target tp4_test
 tp4_test_EXTERNAL_OBJECTS = \
+"/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/build/CMakeFiles/common.dir/src/carte.cpp.o" \
+"/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/build/CMakeFiles/common.dir/src/paquet.cpp.o" \
+"/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/build/CMakeFiles/common.dir/src/ressource.cpp.o" \
+"/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/build/CMakeFiles/common.dir/src/usine.cpp.o" \
 "/home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/build/CMakeFiles/test.dir/test/catch.cpp.o"
 
 tp4_test: CMakeFiles/tp4_test.dir/test/tp4_test.cpp.o
+tp4_test: CMakeFiles/common.dir/src/carte.cpp.o
+tp4_test: CMakeFiles/common.dir/src/paquet.cpp.o
+tp4_test: CMakeFiles/common.dir/src/ressource.cpp.o
+tp4_test: CMakeFiles/common.dir/src/usine.cpp.o
 tp4_test: CMakeFiles/test.dir/test/catch.cpp.o
 tp4_test: CMakeFiles/tp4_test.dir/build.make
 tp4_test: CMakeFiles/tp4_test.dir/link.txt

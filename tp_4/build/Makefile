@@ -181,6 +181,102 @@ tp4_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp4_test.dir/build.make CMakeFiles/tp4_test.dir/build
 .PHONY : tp4_test/fast
 
+src/carte.o: src/carte.cpp.o
+.PHONY : src/carte.o
+
+# target to build an object file
+src/carte.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/carte.cpp.o
+.PHONY : src/carte.cpp.o
+
+src/carte.i: src/carte.cpp.i
+.PHONY : src/carte.i
+
+# target to preprocess a source file
+src/carte.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/carte.cpp.i
+.PHONY : src/carte.cpp.i
+
+src/carte.s: src/carte.cpp.s
+.PHONY : src/carte.s
+
+# target to generate assembly for a file
+src/carte.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/carte.cpp.s
+.PHONY : src/carte.cpp.s
+
+src/paquet.o: src/paquet.cpp.o
+.PHONY : src/paquet.o
+
+# target to build an object file
+src/paquet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.o
+.PHONY : src/paquet.cpp.o
+
+src/paquet.i: src/paquet.cpp.i
+.PHONY : src/paquet.i
+
+# target to preprocess a source file
+src/paquet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.i
+.PHONY : src/paquet.cpp.i
+
+src/paquet.s: src/paquet.cpp.s
+.PHONY : src/paquet.s
+
+# target to generate assembly for a file
+src/paquet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/paquet.cpp.s
+.PHONY : src/paquet.cpp.s
+
+src/ressource.o: src/ressource.cpp.o
+.PHONY : src/ressource.o
+
+# target to build an object file
+src/ressource.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/ressource.cpp.o
+.PHONY : src/ressource.cpp.o
+
+src/ressource.i: src/ressource.cpp.i
+.PHONY : src/ressource.i
+
+# target to preprocess a source file
+src/ressource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/ressource.cpp.i
+.PHONY : src/ressource.cpp.i
+
+src/ressource.s: src/ressource.cpp.s
+.PHONY : src/ressource.s
+
+# target to generate assembly for a file
+src/ressource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/ressource.cpp.s
+.PHONY : src/ressource.cpp.s
+
+src/usine.o: src/usine.cpp.o
+.PHONY : src/usine.o
+
+# target to build an object file
+src/usine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/usine.cpp.o
+.PHONY : src/usine.cpp.o
+
+src/usine.i: src/usine.cpp.i
+.PHONY : src/usine.i
+
+# target to preprocess a source file
+src/usine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/usine.cpp.i
+.PHONY : src/usine.cpp.i
+
+src/usine.s: src/usine.cpp.s
+.PHONY : src/usine.s
+
+# target to generate assembly for a file
+src/usine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/usine.cpp.s
+.PHONY : src/usine.cpp.s
+
 test/catch.o: test/catch.cpp.o
 .PHONY : test/catch.o
 
@@ -290,6 +386,18 @@ help:
 	@echo "... tp4_mouchard"
 	@echo "... tp4_test"
 	@echo "... tp4_vecteur"
+	@echo "... src/carte.o"
+	@echo "... src/carte.i"
+	@echo "... src/carte.s"
+	@echo "... src/paquet.o"
+	@echo "... src/paquet.i"
+	@echo "... src/paquet.s"
+	@echo "... src/ressource.o"
+	@echo "... src/ressource.i"
+	@echo "... src/ressource.s"
+	@echo "... src/usine.o"
+	@echo "... src/usine.i"
+	@echo "... src/usine.s"
 	@echo "... test/catch.o"
 	@echo "... test/catch.i"
 	@echo "... test/catch.s"

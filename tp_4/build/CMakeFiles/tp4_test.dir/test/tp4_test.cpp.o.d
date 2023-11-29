@@ -213,6 +213,15 @@ CMakeFiles/tp4_test.dir/test/tp4_test.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
  /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h \
- /usr/include/c++/12/pstl/glue_numeric_defs.h /usr/include/c++/12/sstream \
- /usr/include/c++/12/istream /usr/include/c++/12/bits/istream.tcc \
- /usr/include/c++/12/bits/sstream.tcc
+ /usr/include/c++/12/pstl/glue_numeric_defs.h \
+ /usr/include/c++/12/iostream /usr/include/c++/12/istream \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/sstream \
+ /usr/include/c++/12/bits/sstream.tcc \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/carte.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/usine.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/carte.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/paquet.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/usine.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/ressource.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/consommateur.hpp \
+ /home/local.isima.fr/rilamrani/shared/zz3/cpp/tp_4/src/ressource.hpp

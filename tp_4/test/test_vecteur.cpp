@@ -3,6 +3,7 @@
 #include <deque>
 #include <vecteur.hpp>
 
+
 // Fonction principale //---------------------------------------------------------------------------
 int main(void) {
  complexe_t::stats();
